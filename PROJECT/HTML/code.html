@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <title>Calculator</title>
+    <style>
+      .calculator {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+      }
+
+      .calculator input[type="text"] {
+        width: 250px;
+        height: 40px;
+        margin-bottom: 20px;
+        font-size: 24px;
+        text-align: right;
+        padding-right: 10px;
+      }
+
+      .calculator input[type="button"] {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
+
+      .row {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="calculator">
+      <input type="text" id="result" disabled />
+      <div class="row">
+        <input type="button" value="7" onclick="addToResult('7')" />
+        <input type="button" value="8" onclick="addToResult('8')" />
+        <input type="button" value="9" onclick="addToResult('9')" />
+        <input type="button" value="+" onclick="addToResult('+')" />
+      </div>
+      <div class="row">
+        <input type="button" value="4" onclick="addToResult('4')" />
+        <input type="button" value="5" onclick="addToResult('5')" />
+        <input type="button" value="6" onclick="addToResult('6')" />
+        <input type="button" value="-" onclick="addToResult('-')" />
+      </div>
+      <div class="row">
+        <input type="button" value="1" onclick="addToResult('1')" />
+        <input type="button" value="2" onclick="addToResult('2')" />
+        <input type="button" value="3" onclick="addToResult('3')" />
+        <input type="button" value="*" onclick="addToResult('*')" />
+      </div>
+      <div class="row">
+        <input type="button" value="0" onclick="addToResult('0')" />
+      </div>
+    </div>
+  </body>
+</html>

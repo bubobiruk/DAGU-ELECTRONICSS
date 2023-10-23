@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AMAZON ONLINE SHOPING</title>
+    <link rel="stylesheet" href="/CSS/AMAZON.css" />
+    <style>
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+
+        background: linear-gradient(#ff6b15, #736c77, #736be7);
+        height: auto;
+        overflow-x: hidden;
+      }
+
+      /*UPPER PART*/
+      .upper-part1 {
+        display: flex;
+        margin-top: 2rem;
+        margin-bottom: 0;
+        margin: 5rem;
+        display: grid;
+        justify-content: space-between;
+      }
+      @media screen and (max-width: 768px) {
+        .upper-part1 {
+          margin-bottom: 0;
+          margin-left: 0rem;
+        }
+      }
+      @media screen and (max-width: 768px) {
+        .link1 {
+          font-size: 1.5rem;
+        }
+      }
+
+      .logo {
+        width: 300px;
+        height: auto;
+        margin-top: -8rem;
+        margin-bottom: -8rem;
+        margin-left: 2rem;
+      }
+      .link1 {
+        font-size: 2rem;
+        font-weight: 500;
+        color: white;
+        text-decoration: none;
+      }
+      @media screen and (min-width: 768px) {
+        .grid--1x2 {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        .two {
+          margin-top: 3rem;
+          margin-bottom: -1rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          margin-left: 5rem;
+        }
+        .logo {
+          width: 24rem;
+          margin-left: 0;
+        }
+      }
+
+      .two {
+        text-align: right;
+        margin-right: 5rem;
+      }
+
+      /*SEARCH*/
+
+      .input:placeholder-shown {
+        font-size: 1.5rem;
+        margin: 0;
+      }
+
+      .input {
+        border: 0;
+        border-radius: 30px;
+        padding-left: 10px;
+        padding-right: 20px;
+        font-size: 1.5rem;
+        outline: 0;
+        background-color: transparent;
+        display: flex;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+
+      .search {
+        width: auto;
+        height: 3rem;
+        border: 0px solid black;
+        border-radius: 40px;
+        display: flex;
+        box-shadow: 0px 2px 10px black;
+        margin: 2rem;
+        margin-top: 5rem;
+        overflow: hidden;
+      }
+
+      .link2 {
+        width: 10rem;
+        height: 2.8rem;
+        border: 2px solid white;
+        border-radius: 40px;
+        font-size: 1rem;
+        font-weight: bold;
+        background-color: #ccc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+
+      .btn:hover {
+        cursor: pointer;
+      }
+
+      .icon2 {
+        width: 50px;
+        height: 25px;
+        color: black;
+      }
+      /* ITEMS*/
+      .items {
+        width: 300px;
+        height: 320px;
+        text-align: center;
+        border-radius: 15px;
+        margin-top: 3rem;
+      }
+      .grid {
+        display: grid;
+      }
+
+      @media screen and (min-width: 768px) {
+        .grid--3x3 {
+          grid-template-columns: 1fr 1fr 1fr;
+        }
+      }
+      .name {
+        font-size: 1.4rem;
+        font-weight: bold;
+        text-align: center;
+        color: white;
+        opacity: 0.7;
+      }
+      .price {
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: white;
+        opacity: 0.7;
+      }
+      .order {
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-decoration: underline;
+        color: white;
+        opacity: 0.7;
+      }
+      .grida {
+        text-align: center;
+      }
+
+      .ABOUT-US {
+        width: 30vh;
+        height: 3.5rem;
+        background-color: transparent;
+        border-radius: 30rem;
+        box-shadow: 0px 3px 10px 0px rgb(46, 45, 45);
+        border: 2px solid rgb(248, 245, 245);
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+
+        color: white;
+      }
+
+      a {
+        color: white;
+        opacity: 0.8;
+        text-decoration: none;
+      }
+
+      .header2 {
+        font-size: 3rem;
+        font-weight: bolder;
+        position: relative;
+        left: 1rem;
+        margin-bottom: 3rem;
+        outline: 0;
+        text-align: center;
+      }
+      .em {
+        font-size: 4rem;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <div class="upper-part1 grid--1x2">
+        <div class="one"><img src="/icons/DAGU.png" class="logo" alt="" /></div>
+        <div class="two"><a href="#" class="link1">SIGN IN ></a></div>
+      </div>
+
+      <div class="upper-part2">
+        <div class="search">
+          <a href="#" class="link2">
+            <img src="/icons/search.svg" class="icon2" />
+          </a>
+          <input class="input" placeholder="Search Items" type="text" />
+        </div>
+      </div>
+      <div class="header2">
+        <span class="em">A</span>VAILABLE <span class="em">I</span>TEMS
+      </div>
+      <div class="grid grid--3x3">
+        <div class="grida">
+          <img src="/PHOTOS/1.JPG" class="items" alt="" />
+          <p class="name">NAME : BULB CAMERA</p>
+          <p class="price">PRICE : 75$</p>
+          <p><a class="order" href="/HTML/AMAZON1.html">ORDER</a></p>
+        </div>
+        <div class="grida">
+          <img src="/PHOTOS/2.JPG" class="items" alt="" />
+          <p class="name">NAME : S CAMERA</p>
+          <p class="price">PRICE : 60$</p>
+          <p><a class="order" href="/HTML/AMAZON2.html">ORDER</a></p>
+        </div>
+        <div class="grida">
+          <img src="/PHOTOS/3.JPG" class="items" alt="" />
+          <p class="name">NAME : WIFI-ROUTER</p>
+          <p class="price">PRICE : 25$</p>
+          <p><a class="order" href="/HTML/AMAZON3.html">ORDER</a></p>
+        </div>
+        <div class="grida">
+          <img src="/PHOTOS/4.JPG" class="items" alt="" />
+          <p class="name">NAME : SMART WATCH</p>
+          <p class="price">PRICE : 35$</p>
+          <p><a class="order" href="/HTML/AMAZON4.html">ORDER</a></p>
+        </div>
+        <div class="grida">
+          <img src="/PHOTOS/5.JPG" class="items" alt="" />
+          <p class="name">NAME : SMART WATCH</p>
+          <p class="price">PRICE : 65$</p>
+          <p><a class="order" href="/HTML/AMAZON5.html">ORDER</a></p>
+        </div>
+        <div class="grida">
+          <img src="/PHOTOS/6.JPG" class="items" alt="" />
+          <p class="name">NAME : SMART WATCH</p>
+          <p class="price">PRICE : 55$</p>
+          <p><a class="order" href="/HTML/AMAZON4.html">ORDER</a></p>
+        </div>
+      </div>
+    </center>
+    <center>
+      <div class="ABOUT-US"><a href="/HTML/ABOUT AMAZON.html">ABOUT US</a></div>
+    </center>
+  </body>
+</html>
